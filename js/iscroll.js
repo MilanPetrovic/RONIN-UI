@@ -1585,7 +1585,7 @@ function createDefaultScrollbar (direction, interactive, type) {
 
 	if ( type === true ) {
 		scrollbar.style.cssText = 'position:absolute;z-index:9999';
-		indicator.style.cssText = '-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;position:absolute;background:rgba(255,255,255,0.8);border:1px solid rgba(255,255,255,0.9);border-radius:3px';
+		indicator.style.cssText = 'position:absolute;background:white;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;position:absolute;border:1px solid rgba(255,255,255,0.9);-webkit-border-radius:20px;border-radius:20px';
 	}
 
 	indicator.className = 'iScrollIndicator';
