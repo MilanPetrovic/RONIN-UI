@@ -1,0 +1,98 @@
+@import "../Import";
+
+.navList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: left;
+  max-width: 320px;
+  width: 100%;
+  background: $brown;
+  color: $textLight;
+  @include boxShadow(1px 1px 2px rgba(0, 0, 0, .55));
+
+  // .navList li
+  li {
+    overflow: hidden;
+    height: 103px;
+    border-bottom: 1px solid #372929;
+  }
+
+  // .navList div
+  div {
+    float: left;
+    height: 100%;
+    background: $yellow;
+    margin-left: -110%;
+    @include transition(margin-left .4s);
+
+    &.show {
+      margin-left: 0;
+    }
+
+    // .navList div span
+    span {
+      float: right;
+      width: 20px;
+      margin-right: -20px;
+      font-family: "Liga";
+      color: $yellow;
+      text-indent: -6px;
+    }
+
+    // .navList div a
+    a {
+      display: block;
+      width: 70px;
+      height: 35px;
+      line-height: 34px;
+      text-align: center;
+      font-size: 25px;
+      font-family: "Liga";
+      text-decoration: none;
+      color: $textDark;
+      @include transition(all .4s);
+
+      &:hover {
+        background: $darkYellow;
+        color: $textLight;
+      }
+    }
+  }
+
+  // .navList img
+  img {
+    display: block;
+    float: left;
+    border: 5px solid;
+    border-color: #372929;
+    margin: 15px 10px 15px 15px;
+    @include borderRadius(50%);
+    @include transition(margin-left .4s);
+  }
+
+  // .navList p
+  p {
+    overflow: hidden;
+    height: 67px;
+    line-height: 22px;
+    font-size: 14px;
+    margin: 0;
+    padding: 20px 20px 0 0;
+    @include transition(opacity .4s);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navList span {
+    margin-top: 45px;
+  }
+
+  .navList .show~p {
+    opacity: 0;
+  }
+
+  .navList .show~img {
+    margin-left: 45px;
+  }
+}
