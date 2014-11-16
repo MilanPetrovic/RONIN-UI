@@ -1,0 +1,58 @@
+@import "../Import";
+
+input.ui_form, div.ui_form input,
+textarea.ui_form_text, div.ui_form_text textarea {
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    outline: none;
+    border: none;
+    background: $brown;
+    color: $textLight;
+    font-size: .9em;
+    line-height: 25px;
+    resize: none;
+    @include boxSizing();
+}
+
+input.ui_form, div.ui_form input {
+    padding: 5px 20px;
+    @include borderRadius(20px);
+}
+
+.ui_form span {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    margin: 5px 0 0 5px;
+    background: $yellow;
+    color: $brown;
+    font-family: "Liga";
+    font-size: 16px;
+    text-align: center;
+    @include borderRadius(50%);
+ 
+    +input {
+        padding-left: 35px;
+        margin: 0 0 20px 0;
+    }
+}
+
+textarea.ui_form_text, div.ui_form_text textarea {
+    padding: 10px;
+    @include borderRadius(5px);
+}
+
+div.ui_form_text span {
+    display: block;
+    position: absolute;
+    color: $yellow;
+    font-family: "Liga";
+    margin: 10px 0 0 10px;
+    
+    + textarea {
+        margin: 0;
+        padding-left: 35px;
+    }
+}
