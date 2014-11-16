@@ -16,6 +16,10 @@
     overflow: hidden;
     height: 103px;
     border-bottom: 1px solid #372929;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   // .navList div

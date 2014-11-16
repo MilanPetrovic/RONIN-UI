@@ -3,8 +3,11 @@
 @font-face { font-family: 'Open Sans'; src: url("OpenSans-Regular-webfont.eot"); src: url("OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("OpenSans-Regular-webfont.woff") format("woff"), url("OpenSans-Regular-webfont.ttf") format("truetype"), url("OpenSans-Regular-webfont.svg#open_sansregular") format("svg"); font-weight: normal; font-style: normal; }
 body { margin: 35px; padding: 0; -webkit-font-smoothing: antialiased; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; color: #666; }
 
+body > a, body > div { margin-top: 20px; }
+
 .navList { margin: 0; padding: 0; list-style-type: none; float: left; max-width: 320px; width: 100%; background: #4f3b3b; color: white; -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55); box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55); }
 .navList li { overflow: hidden; height: 103px; border-bottom: 1px solid #372929; }
+.navList li:hover { cursor: pointer; }
 .navList div { float: left; height: 100%; background: #f4d37a; margin-left: -110%; -webkit-transition: margin-left 0.4s; transition: margin-left 0.4s; }
 .navList div.show { margin-left: 0; }
 .navList div span { float: right; width: 20px; margin-right: -20px; font-family: "Liga"; color: #f4d37a; text-indent: -6px; }

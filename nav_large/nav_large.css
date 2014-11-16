@@ -3,6 +3,8 @@
 @font-face { font-family: 'Open Sans'; src: url("OpenSans-Regular-webfont.eot"); src: url("OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("OpenSans-Regular-webfont.woff") format("woff"), url("OpenSans-Regular-webfont.ttf") format("truetype"), url("OpenSans-Regular-webfont.svg#open_sansregular") format("svg"); font-weight: normal; font-style: normal; }
 body { margin: 35px; padding: 0; -webkit-font-smoothing: antialiased; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; color: #666; }
 
+body > a, body > div { margin-top: 20px; }
+
 .navLarge { max-width: 895px; width: 100%; margin: 0 auto; overflow: hidden; background: #f4d37a; -webkit-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); }
 
 .navLarge img { float: left; margin-bottom: -3000%; }
