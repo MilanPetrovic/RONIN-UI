@@ -19,4 +19,14 @@ $(function(){
 
     });
   }
+  $('.tab_ronin > a').on('click', function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('open_tm');
+  });
+  $('.tab_ronin > ul a').on('click', function(e) {
+    e.preventDefault();
+    $(this).parents(':eq(2)').toggleClass('open_tm');
+    var show = $(this).parent().index();
+    $(this).parents(':eq(2)').find('> div > div').hide().parent().find('> div:eq('+show+')').show();
+  });
 });
