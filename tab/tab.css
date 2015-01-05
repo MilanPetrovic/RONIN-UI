@@ -1,149 +1,46 @@
-@font-face {
-  font-family: 'Liga';
-  src: url("../font/websymbolsligaregular.eot");
-  src: url("../font/websymbolsligaregular.eot?#iefix") format("embedded-opentype"), url("../font/websymbolsligaregular.woff") format("woff"), url("../font/websymbolsligaregular.ttf") format("truetype"), url("../font/websymbolsligaregular.svg#WebSymbolsRegular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Open Sans Light';
-  src: url("OpenSans-Light-webfont.eot");
-  src: url("OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("OpenSans-Light-webfont.woff") format("woff"), url("OpenSans-Light-webfont.ttf") format("truetype"), url("OpenSans-Light-webfont.svg#open_sanslight") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Open Sans';
-  src: url("OpenSans-Regular-webfont.eot");
-  src: url("OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("OpenSans-Regular-webfont.woff") format("woff"), url("OpenSans-Regular-webfont.ttf") format("truetype"), url("OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-body {
-  margin: 35px;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  color: #666; }
+@font-face { font-family: 'Liga'; src: url("../font/websymbolsligaregular.eot"); src: url("../font/websymbolsligaregular.eot?#iefix") format("embedded-opentype"), url("../font/websymbolsligaregular.woff") format("woff"), url("../font/websymbolsligaregular.ttf") format("truetype"), url("../font/websymbolsligaregular.svg#WebSymbolsRegular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Open Sans Light'; src: url("OpenSans-Light-webfont.eot"); src: url("OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("OpenSans-Light-webfont.woff") format("woff"), url("OpenSans-Light-webfont.ttf") format("truetype"), url("OpenSans-Light-webfont.svg#open_sanslight") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Open Sans'; src: url("OpenSans-Regular-webfont.eot"); src: url("OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("OpenSans-Regular-webfont.woff") format("woff"), url("OpenSans-Regular-webfont.ttf") format("truetype"), url("OpenSans-Regular-webfont.svg#open_sansregular") format("svg"); font-weight: normal; font-style: normal; }
+body { margin: 35px; padding: 0; -webkit-font-smoothing: antialiased; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; color: #666; }
 
-body > a,
-body > div {
-  margin-top: 20px; }
+body > a, body > div { margin-top: 20px; }
 
-.tab_ronin {
-  overflow: hidden;
-  background: #dbd8d2;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); }
+.tab_ronin { overflow: hidden; background: #dbd8d2; -webkit-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); }
 
-.tab_ronin > a {
-  display: none; }
+.tab_ronin > a { display: none; }
 
-.tab_ronin > ul {
-  width: 230px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  background: #f0e9dd; }
+.tab_ronin > ul { width: 230px; margin: 0; padding: 0; list-style-type: none; background: #f0e9dd; }
 
-.tab_ronin > ul li {
-  border-bottom: 1px solid #ddd8ce; }
+.tab_ronin > ul li { border-bottom: 1px solid #ddd8ce; }
 
-.tab_ronin > ul a {
-  display: block;
-  width: 100%;
-  line-height: 60px;
-  text-decoration: none;
-  color: #4f3b3b;
-  font-size: 18px;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s; }
+.tab_ronin > ul a { display: block; width: 100%; line-height: 60px; text-decoration: none; color: #4f3b3b; font-size: 18px; -webkit-transition: background 0.3s; transition: background 0.3s; }
 
-.tab_ronin > ul a:hover {
-  background: #f4d37a; }
+.tab_ronin > ul a:hover { background: #f4d37a; }
 
-.tab_ronin > ul a:hover:before {
-  content: "]";
-  float: right;
-  width: 15px;
-  margin: -2px -15px -60px 0;
-  font-family: "Liga";
-  color: #f4d37a;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
+.tab_ronin > ul a:hover:before { content: "]"; float: right; width: 15px; margin: -2px -15px -60px 0; font-family: "Liga"; color: #f4d37a; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
 
-.tab_ronin > ul span {
-  float: left;
-  width: 40px;
-  margin: 0 20px;
-  font-family: "Liga";
-  text-align: center;
-  font-size: 40px; }
+.tab_ronin > ul span { float: left; width: 40px; margin: 0 20px; font-family: "Liga"; text-align: center; font-size: 40px; }
 
-.tab_ronin > ul,
-.tab_ronin > div {
-  display: table-cell;
-  vertical-align: top; }
+.tab_ronin > ul, .tab_ronin > div { display: table-cell; vertical-align: top; }
 
-.tab_ronin > div {
-  color: #4f3b3b;
-  padding: 30px; }
+.tab_ronin > div { color: #4f3b3b; padding: 30px; }
 
-.tab_ronin h1 {
-  font-size: 25px;
-  font-weight: normal; }
+.tab_ronin h1 { font-size: 25px; font-weight: normal; }
 
-.tab_ronin p {
-  font-size: 16px;
-  line-height: 150%; }
+.tab_ronin p { font-size: 16px; line-height: 150%; }
 
-.tab_ronin > div > div *:first-child {
-  margin-top: 0;
-  padding-top: 0; }
+.tab_ronin > div > div *:first-child { margin-top: 0; padding-top: 0; }
 
-.tab_ronin > div > div *:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0; }
+.tab_ronin > div > div *:last-child { margin-bottom: 0; padding-bottom: 0; }
 
-.tab_ronin > div > div {
-  display: none; }
+.tab_ronin > div > div { display: none; }
 
-.tab_ronin > div > div:first-child {
-  display: block; }
+.tab_ronin > div > div:first-child { display: block; }
 
-@media screen and (max-width: 680px) {
-  .tab_ronin > a {
-    display: block;
-    line-height: 50px;
-    background: #4f3b3b;
-    color: #fff;
-    text-align: center;
-    font-size: 18px;
-    text-decoration: none;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s; }
-
-  .tab_ronin > a:hover {
-    background: #f4d37a;
-    color: #4f3b3b; }
-
-  .tab_ronin > a span {
-    float: left;
-    margin-left: 20px;
-    margin-top: -5px;
-    font-family: "Liga";
-    font-size: 40px; }
-
-  .tab_ronin > ul,
-  .tab_ronin > div {
-    display: block; }
-
-  .tab_ronin > ul {
-    width: 100%;
-    display: none; }
-
-  .tab_ronin.open_tm > ul {
-    display: block; }
-
-  .tab_ronin.open_tm > div {
-    display: none; } }
+@media screen and (max-width: 680px) { .tab_ronin > a { display: block; line-height: 50px; background: #4f3b3b; color: #fff; text-align: center; font-size: 18px; text-decoration: none; -webkit-transition: all 0.3s; transition: all 0.3s; }
+  .tab_ronin > a:hover { background: #f4d37a; color: #4f3b3b; }
+  .tab_ronin > a span { float: left; margin-left: 20px; margin-top: -5px; font-family: "Liga"; font-size: 40px; }
+  .tab_ronin > ul, .tab_ronin > div { display: block; }
+  .tab_ronin > ul { width: 100%; display: none; }
+  .tab_ronin.open_tm > ul { display: block; }
+  .tab_ronin.open_tm > div { display: none; } }

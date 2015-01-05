@@ -13,11 +13,11 @@ body > a, body > div { margin-top: 20px; }
 
 .navLarge > p { max-width: 250px; margin: 0px 35px 35px 35px; line-height: 160%; font-size: 21px; color: #4f3b3b; }
 
-.navLarge a { display: inline-block; height: 35px; line-height: 35px; margin: 0 0 35px 130px; background: #4f3b3b; color: white; padding-left: 15px; font-size: 14px; text-decoration: none; -webkit-border-radius: 50px; border-radius: 50px; -webkit-transition: background 0.3s; transition: background 0.3s; }
+.navLarge a { display: inline-block; height: 35px; line-height: 35px; margin: 0 0 35px 130px; background: #4f3b3b; color: #fff; padding-left: 15px; font-size: 14px; text-decoration: none; -webkit-border-radius: 50px; border-radius: 50px; -webkit-transition: background 0.3s; transition: background 0.3s; }
 .navLarge a:hover { background: #361c12; }
 .navLarge a span { display: inline-block; float: right; width: 27px; height: 27px; line-height: 27px; margin: 4px 4px 4px 10px; color: #4f3b3b; font-size: 21px; font-weight: bold; text-align: center; text-indent: 3px; background: white; -webkit-border-radius: 50%; border-radius: 50%; }
 
-.navLarge ul { margin: 0; padding: 0; width: 100%; float: left; background: #4f3b3b; color: white; list-style-type: none; }
+.navLarge ul { margin: 0; padding: 0; width: 100%; float: left; background: #4f3b3b; color: #fff; list-style-type: none; }
 
 .navLarge li { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; float: left; width: 33.333333%; border-left: 1px solid #959595; }
 .navLarge li:first-child { border-left: none; }
