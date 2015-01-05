@@ -1,0 +1,140 @@
+@import "../Common";
+
+.tab_ronin {
+	overflow: hidden;
+	background: #dbd8d2;
+	@include borderRadius(3px);
+	@include boxShadow(1px 1px 3px rgba(0,0,0,.5));
+}
+
+.tab_ronin > a {
+	display: none;
+}
+
+.tab_ronin > ul {
+	width: 230px; 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: $cream;
+}
+
+.tab_ronin > ul li {
+    border-bottom: 1px solid #ddd8ce;   
+}
+
+.tab_ronin > ul a {
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    color: $textDark;
+    font-size: 18px;
+    @include transition(background .3s);
+}
+
+.tab_ronin > ul a:hover {
+    background: $yellow;   
+}
+
+.tab_ronin > ul a:hover:before {
+    content: "]";
+    float: right;
+    width: 15px;
+    margin: -2px -15px -60px 0;
+    font-family: "Liga";
+    color: $yellow;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+}
+
+.tab_ronin > ul span {
+    float: left;
+    width: 40px;
+    margin: 0 20px;
+    font-family: "Liga";
+    text-align: center;
+    font-size: 40px;
+}
+
+.tab_ronin > ul,
+.tab_ronin > div {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.tab_ronin > div {
+	color: $textDark;
+	padding: 30px;
+}
+
+.tab_ronin h1 {
+	font-size: 25px;
+	font-weight: normal;
+}
+
+.tab_ronin p {
+	font-size: 16px;
+	line-height: 150%;
+}
+
+.tab_ronin > div > div *:first-child {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.tab_ronin > div > div *:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.tab_ronin > div > div {
+	display: none;
+}
+
+.tab_ronin > div > div:first-child {
+	display: block;
+}
+
+@media screen and (max-width: 680px) {
+	.tab_ronin > a {
+		display: block;
+		line-height: 50px;
+		background: $brown;
+		color: $textLight;
+		text-align: center;
+		font-size: 18px;
+		text-decoration: none;
+		@include transition(all .3s);
+	}
+
+	.tab_ronin > a:hover {
+		background: $yellow;
+		color: $textDark;
+	}
+
+	.tab_ronin > a span {
+		float: left;
+		margin-left: 20px;
+		margin-top: -5px;
+		font-family: "Liga";
+		font-size: 40px;
+	}
+
+	.tab_ronin > ul,
+	.tab_ronin > div {
+		display: block;
+	}
+
+	.tab_ronin > ul {
+		width: 100%;
+		display: none;
+	}
+
+	.tab_ronin.open_tm > ul {
+		display: block;
+	}
+
+	.tab_ronin.open_tm > div {
+		display: none;
+	}
+}

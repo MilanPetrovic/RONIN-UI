@@ -1,0 +1,118 @@
+@import "../Common";
+
+.ui-datepicker {
+	display: inline-block;
+	background: $cream;
+	@include borderRadius(3px);
+	@include boxShadow(1px 1px 4px rgba(0, 0, 0, .5));
+}
+
+.ui-datepicker-header {
+	height: 135px;
+	background: $yellow;
+	color: $textDark;
+}
+
+.ui-datepicker-header a {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 57.5px;
+	background: $brown;
+	color: $yellow;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 16px;
+	@include borderRadius(50%);	
+}
+
+.ui-datepicker-prev {
+	float: left;
+	margin-left: 30px;
+	text-indent: -1px;
+}
+
+.ui-datepicker-next {
+	float: right;
+	margin-right: 30px;
+	text-indent: 1px;
+}
+
+.ui-datepicker-title {
+	padding-top: 35px;
+	text-align: center;
+	margin: 0 50px;
+}
+
+.ui-datepicker-month {
+	display: block;
+	font-size: 25px;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+.ui-datepicker-year {
+	display: inline-block;
+	padding-top: 5px;
+	font-size: 16px;
+	margin-left: -5px;
+}
+
+.ui-datepicker-calendar {
+	border-collapse: collapse;
+	width: 280px;
+}
+
+.ui-datepicker-calendar thead {
+	line-height: 32px;
+	background: $brown;
+	color: $textLight;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.ui-datepicker-calendar td {
+	padding: 0;
+	margin: 0;
+}
+
+.ui-datepicker-calendar a {
+	display: block;
+	width: 100%;
+	line-height: 35px;
+	text-align: center;
+	font-size: 14px;
+	color: $textDark;
+	text-decoration: none;
+}
+
+.ui-datepicker-calendar a.ui-state-active {
+	background: $red;
+	color: $textLight;
+}
+
+.ui-datepicker-group {
+	display: inline-block;
+	border-left: 1px solid rgba(0,0,0,.1);
+	margin-left: -1px;
+	height: 380px;
+}
+
+.ui-datepicker-multi .ui-datepicker-group:first-child {
+	border-left: none;
+	margin-left: 0;
+}
+
+@media screen and (max-width: 680px) {
+	.ui-datepicker-multi {
+		max-width: 280px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		margin: 0 0 0 10px;
+	}
+}

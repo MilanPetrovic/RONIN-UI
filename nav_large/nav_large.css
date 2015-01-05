@@ -1,0 +1,33 @@
+@font-face { font-family: 'Liga'; src: url("../font/websymbolsligaregular.eot"); src: url("../font/websymbolsligaregular.eot?#iefix") format("embedded-opentype"), url("../font/websymbolsligaregular.woff") format("woff"), url("../font/websymbolsligaregular.ttf") format("truetype"), url("../font/websymbolsligaregular.svg#WebSymbolsRegular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Open Sans Light'; src: url("OpenSans-Light-webfont.eot"); src: url("OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("OpenSans-Light-webfont.woff") format("woff"), url("OpenSans-Light-webfont.ttf") format("truetype"), url("OpenSans-Light-webfont.svg#open_sanslight") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Open Sans'; src: url("OpenSans-Regular-webfont.eot"); src: url("OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("OpenSans-Regular-webfont.woff") format("woff"), url("OpenSans-Regular-webfont.ttf") format("truetype"), url("OpenSans-Regular-webfont.svg#open_sansregular") format("svg"); font-weight: normal; font-style: normal; }
+body { margin: 35px; padding: 0; -webkit-font-smoothing: antialiased; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; color: #666; }
+
+body > a, body > div { margin-top: 20px; }
+
+.navLarge { max-width: 895px; width: 100%; margin: 0 auto; overflow: hidden; background: #f4d37a; -webkit-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); }
+
+.navLarge img { float: left; margin-bottom: -3000%; }
+
+.navLarge h1 { margin: 35px; font-size: 41px; font-weight: 200; color: #4f3b3b; }
+
+.navLarge > p { max-width: 250px; margin: 0px 35px 35px 35px; line-height: 160%; font-size: 21px; color: #4f3b3b; }
+
+.navLarge a { display: inline-block; height: 35px; line-height: 35px; margin: 0 0 35px 130px; background: #4f3b3b; color: #fff; padding-left: 15px; font-size: 14px; text-decoration: none; -webkit-border-radius: 50px; border-radius: 50px; -webkit-transition: background 0.3s; transition: background 0.3s; }
+.navLarge a:hover { background: #361c12; }
+.navLarge a span { display: inline-block; float: right; width: 27px; height: 27px; line-height: 27px; margin: 4px 4px 4px 10px; color: #4f3b3b; font-size: 21px; font-weight: bold; text-align: center; text-indent: 3px; background: white; -webkit-border-radius: 50%; border-radius: 50%; }
+
+.navLarge ul { margin: 0; padding: 0; width: 100%; float: left; background: #4f3b3b; color: #fff; list-style-type: none; }
+
+.navLarge li { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; float: left; width: 33.333333%; border-left: 1px solid #959595; }
+.navLarge li:first-child { border-left: none; }
+.navLarge li p { margin: 10px 0; padding: 0; text-align: center; line-height: 200%; font-size: 29px; font-weight: 200; }
+.navLarge li span { font-family: "Liga"; }
+.navLarge li small { font-size: 12px; font-weight: normal; }
+
+@media screen and (max-width: 768px) { .navLarge li small { display: block; width: 100%; margin-top: -20px; } }
+@media screen and (max-width: 480px) { .navLarge { text-align: center; }
+  .navLarge h1 { margin-bottom: 10px; font-size: 35px; }
+  .navLarge > p { font-size: 18px; }
+  .navLarge a { margin-left: 0; }
+  .navLarge li p { font-size: 20px; } }

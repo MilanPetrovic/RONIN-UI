@@ -1,0 +1,135 @@
+@import "../Common";
+
+.navLarge {
+  max-width: 895px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: $yellow;
+  @include borderRadius(5px);
+  @include boxShadow(2px 2px 3px rgba(0, 0, 0, .3));
+}
+
+.navLarge img {
+  float: left;
+  margin-bottom: -3000%;
+}
+
+.navLarge h1 {
+  margin: 35px;
+  font-size: 41px;
+  font-weight: 200;
+  color: $textDark;
+}
+
+.navLarge > p {
+  max-width: 250px;
+  margin: 0px 35px 35px 35px;
+  line-height: 160%;
+  font-size: 21px;
+  color: $textDark;
+}
+
+.navLarge a {
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 0 35px 130px;
+  background: $brown;
+  color: $textLight;
+  padding-left: 15px;
+  font-size: 14px;
+  text-decoration: none;
+  @include borderRadius(50px);
+  @include transition(background .3s);
+
+  &:hover {
+    background: $darkBrown;
+  }
+
+  span {
+    display: inline-block;
+    float: right;
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    margin: 4px 4px 4px 10px;
+    color: $textDark;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    text-indent: 3px;
+    background: white;
+    @include borderRadius(50%);
+  }
+}
+
+.navLarge ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  float: left;
+  background: $brown;
+  color: $textLight;
+  list-style-type: none;
+}
+
+.navLarge li {
+  @include boxSizing();
+  float: left;
+  width: 33.333333%;
+  border-left: 1px solid #959595;
+
+  &:first-child {
+    border-left: none;
+  }
+
+  p {
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    line-height: 200%;
+    font-size: 29px;
+    font-weight: 200;
+  }
+
+  span {
+    font-family: "Liga";
+  }
+
+  small {
+    font-size: 12px;
+    font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navLarge li small {
+    display: block;
+    width: 100%;
+    margin-top: -20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navLarge {
+    text-align: center;
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 35px;
+    }
+
+    > p {
+      font-size: 18px;
+    }
+
+    a {
+      margin-left: 0;
+    }
+
+    li p {
+      font-size: 20px;
+    }
+  }
+}

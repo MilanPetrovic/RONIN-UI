@@ -1,0 +1,32 @@
+@font-face { font-family: 'Liga'; src: url("../font/websymbolsligaregular.eot"); src: url("../font/websymbolsligaregular.eot?#iefix") format("embedded-opentype"), url("../font/websymbolsligaregular.woff") format("woff"), url("../font/websymbolsligaregular.ttf") format("truetype"), url("../font/websymbolsligaregular.svg#WebSymbolsRegular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Open Sans Light'; src: url("OpenSans-Light-webfont.eot"); src: url("OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("OpenSans-Light-webfont.woff") format("woff"), url("OpenSans-Light-webfont.ttf") format("truetype"), url("OpenSans-Light-webfont.svg#open_sanslight") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Open Sans'; src: url("OpenSans-Regular-webfont.eot"); src: url("OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("OpenSans-Regular-webfont.woff") format("woff"), url("OpenSans-Regular-webfont.ttf") format("truetype"), url("OpenSans-Regular-webfont.svg#open_sansregular") format("svg"); font-weight: normal; font-style: normal; }
+body { margin: 35px; padding: 0; -webkit-font-smoothing: antialiased; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; color: #666; }
+
+body > a, body > div { margin-top: 20px; }
+
+.navList { margin: 0; padding: 0; list-style-type: none; float: left; max-width: 320px; width: 100%; background: #4f3b3b; color: #fff; -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55); box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55); }
+.navList li { overflow: hidden; height: 103px; border-bottom: 1px solid #372929; }
+.navList li:hover { cursor: pointer; }
+.navList div { float: left; height: 100%; background: #f4d37a; margin-left: -110%; -webkit-transition: margin-left 0.4s; transition: margin-left 0.4s; }
+.navList div.show { margin-left: 0; }
+.navList div span { float: right; width: 20px; margin-right: -20px; font-family: "Liga"; color: #f4d37a; text-indent: -6px; }
+.navList div a { display: block; width: 70px; height: 35px; line-height: 34px; text-align: center; font-size: 25px; font-family: "Liga"; text-decoration: none; color: #4f3b3b; -webkit-transition: all 0.4s; transition: all 0.4s; }
+.navList div a:hover { background: #cd9c50; color: #fff; }
+.navList img { display: block; float: left; border: 5px solid; border-color: #372929; margin: 15px 10px 15px 15px; -webkit-border-radius: 50%; border-radius: 50%; -webkit-transition: all 0.4s; transition: all 0.4s; }
+.navList p { overflow: hidden; height: 67px; line-height: 22px; font-size: 14px; margin: 0; padding: 20px 20px 0 0; -webkit-transition: opacity 0.4s; transition: opacity 0.4s; }
+
+.navList li > a { display: block; width: 100%; height: 100%; color: #fff; text-decoration: none; -webkit-transition: all 0.4s; transition: all 0.4s; }
+.navList li > a:hover { background: #f4d37a; color: #4f3b3b; }
+.navList li > a:hover img { border-color: #ae9757; }
+
+.searchList { float: left; max-width: 320px; width: 100%; background: #f0e9dd; -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55); box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55); }
+.searchList .navList { -webkit-box-shadow: none; box-shadow: none; }
+.searchList > span { margin: 0 20px; line-height: 47px; text-align: center; font-family: "Liga"; font-size: 20px; color: #4f3b3b; }
+.searchList > span:first-child { display: block; width: 100%; height: 12px; line-height: 12px; margin: 43px 0 -55px 0; font-size: 18px; color: #f0e9dd; z-index: 999; position: relative; }
+.searchList > input { padding: 0; margin: 0; width: 65%; line-height: 47px; border: none; background: transparent; font-size: 16px; color: #4f3b3b; outline: none; }
+.searchList > div { overflow: hidden; position: relative; background: #4f3b3b; }
+
+@media screen and (max-width: 320px) { .navList span { margin-top: 45px; }
+  .navList .show ~ p { opacity: 0; }
+  .navList .show ~ img { margin-left: 45px; } }
